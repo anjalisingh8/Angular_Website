@@ -1,0 +1,27 @@
+ <p>calculator works!</p>
+ <div style = "text-align: center;">
+    <h1>
+        {{title}}
+    </h1>
+    <input  type = "number" name = "num1" #x>
+    <input  type = "number" name = "num2" #y>
+    <br>
+    <br>
+    <button (click) = "addition(x.value,y.value)">ADD</button>
+    <br>
+    <h3>Result of addition of {{result}}</h3>
+
+</div>
+
+ <div style = "text-align: center;">
+    <h1>
+        My Calculator for multiplication!!
+    </h1>
+    <input type = "number" name = "num" #z>
+    <br>
+    <br>
+    <button (click) = "multiplication(z.value)">Get Multiplication</button>
+    <br>
+    <h3>Result is {{answer.join('*')}}.</h3>
+
+</div> 
